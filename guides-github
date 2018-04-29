@@ -1,0 +1,89 @@
+########################################
+git guid
+########################################
+1- first you must  create new count in github.com
+
+2- download and install git and python in your client
+
+    sudo apt-get update
+    sudo apt-get upgrade
+    sudo apt-get install git
+
+3- go to your directory that you want push files to github site
+
+     cd /home/mojtaba/documents/cisco/
+
+4- create this directory to the git as a repository directory (after that you can move all files to the this directory):
+
+    git init 
+
+5- introduce your acount that you create in github.com to the git software in your client:
+
+    git config --global user.email "example@email.com"
+
+6- check status of your git repository:
+    
+    git status
+
+7- if you create or modify the file in the repository directory, you can add or permanent change file in git with:
+    
+    git add filename
+or
+    git add . # add all new or modify files
+
+8- save commit changes to git reppository:
+    
+    git commit -m "comment"
+
+9- history repository
+    
+    git log
+
+10- if you change a file in the repository and you want to undo change to last save(discard changes):
+
+    git checkout filename
+
+11-  add new remote repository in github site:
+
+    11-1 create New repository in github site:
+        
+        new repository name: cisco
+
+    11-2 push local repository to the remote repository in github site
+
+        git remote add orgin https://github.com/mojtaba-beheshtian/cisco # orgin is a alias of your url
+
+12- push the file from local git repository to the remote repository:
+
+    git push -u orgin master # orgin is a alias of your url and master is a your branch that you want push the files into that
+        inter your acount login:
+        inter your password:
+
+13- for download files from remote repository to the local git repository:
+    
+    git pull -u orgin master
+
+14- for download a remote repository to the locat git repository:
+
+    git clone https://github.com/mojtaba-beheshtian/CISCO.git #(url repository)
+
+15- create new branch in remote repository:
+
+    git branch namebranch
+
+16- switch between branches:
+    
+    git checkout namebranch
+
+17- push newbrach to the remote repository:
+
+    git push orgin namebranch
+
+18- for marge the newbranch with master branch (pull request):
+
+    click on "compare&pull request" icone in remote repository
+
+19- remove a branch:
+
+    git branch -d namebranch
+
