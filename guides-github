@@ -1,13 +1,13 @@
 ########################################
 git guid
 ########################################
-1- first you must  create new count in github.com
+1- first you must  create new acount in github.com
 
 2- download and install git and python in your client
 
     sudo apt-get update
     sudo apt-get upgrade
-    sudo apt-get install git
+    sudo apt-get install git-all
 
 3- go to your directory that you want push files to github site
 
